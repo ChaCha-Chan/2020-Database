@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/main_page/main_page",
+    "pages/search_page/search_page",
+    "pages/my_favorite/my_favorite",
+    "pages/my_score/my_score",
+    "pages/about/about",
+    "pages/course_info/course_info"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "课程评价Database",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#66cc66",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/main_page/main_page",
+        "text": "我的",
+        "iconPath": "pages/../user.png",
+        "selectedIconPath": "pages/../user_selected.png"
+      },
+      {
+        "pagePath": "pages/search_page/search_page",
+        "text": "搜索",
+        "iconPath": "pages/../search.png",
+        "selectedIconPath": "pages/../search_selected.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}

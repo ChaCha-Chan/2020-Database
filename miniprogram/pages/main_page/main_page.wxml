@@ -1,0 +1,34 @@
+<!--miniprogram/pages/main_page/main_page.wxml-->
+<view class="container">
+  <!-- 用户信息 -->
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>  
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <!-- 我的收藏 -->
+  <view class="uploader">
+    <navigator url="../my_favorite/my_favorite" open-type="navigate" class="uploader-text" hover-class="none">
+      <image class="uploader-icon" src="pages/../favorite.png" background-size="cover"></image>  
+      <text>我的收藏</text>
+    </navigator>
+  </view>
+
+  <!-- 我的评价 -->
+  <view class="uploader">
+    <navigator url="../my_score/my_score" open-type="navigate" class="uploader-text" hover-class="none">
+      <image class="uploader-icon" src="pages/../score.png" background-size="cover"></image>  
+      <text>我的评价</text>
+    </navigator>
+  </view>
+  
+  <!-- 关于/帮助 -->
+  <view class="uploader">
+    <navigator url="../about/about" open-type="navigate" class="uploader-text" hover-class="none">
+      <image class="uploader-icon" src="pages/../about.png" background-size="cover"></image>  
+      <text>关于/帮助</text>
+    </navigator>
+  </view>
+
+
+</view>

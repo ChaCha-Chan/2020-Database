@@ -1,0 +1,23 @@
+<!--pages/search_page/search_page.wxml-->
+<view class="bg">
+</view>
+<input class="search-input" maxlength="10" bindinput="bindKeyInput" placeholder="支持课程名模糊搜索"/>
+<button class="btn1" bindtap="order1" style="width:20%">简单优先</button>
+<button class="btn2" bindtap="order2" style="width:20%">有趣优先</button>
+<button class="btn3" bindtap="filter1" style="width:20%">只看专必</button>
+<button class="btn4" bindtap="filter2" style="width:20%">只看专选</button>
+<view class="cards">
+<block wx:for="{{course}}">
+<view class="card">
+  <navigator url="../course_info/course_info" open-type="navigate" hover-class="none">
+    <text class="card-course_attr">{{item.course_type}}</text>
+    <text class="card-course_attr">{{item.course_assess}}</text>
+    <text class="card-course_name">{{item.course_name}}\n</text>
+    <text class="card-course_college">{{item.course_college}}</text>
+    <text class="card-course_teacher">{{item.teacher}}\n</text>
+    <text class="card-course_score1">难易度: {{item.course_avg_easy_score}}</text>
+    <text class="card-course_score2">有趣度: {{item.course_avg_interesting_score}} </text>
+  </navigator>
+</view> 
+</block>
+</view> 
