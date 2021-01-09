@@ -1,0 +1,138 @@
+/* pages/search_page/search_page.wxss */
+.btn1 {
+  background-color: white;
+  color: #006600;
+  border-radius: 20rpx;
+  justify-content: center;
+  position: fixed; 
+  top: 90rpx;
+  left:40rpx;
+  font-size: 24rpx;
+}
+.btn2 {
+  background-color: white;
+  color: #006600;
+  border-radius: 20rpx;
+  justify-content: center;
+  position: fixed; 
+  top: 90rpx;
+  left: 214rpx;
+  font-size: 24rpx;
+}
+.btn3 {
+  background-color: white;
+  color: #006600;
+  border-radius: 20rpx;
+  justify-content: center;
+  position: fixed; 
+  top: 90rpx;
+  right:214rpx;
+  font-size: 24rpx;
+}
+.btn4 {
+  background-color: white;
+  color: #006600;
+  border-radius: 20rpx;
+  justify-content: center;
+  position: fixed; 
+  top: 90rpx;
+  right:40rpx;
+  font-size: 24rpx;
+}
+.bg{
+  /*卡片的宽度*/  
+  width: 100%;
+  /*卡片的高度。*/
+  height: 210rpx;
+  /*背景色，可以自己更换*/
+  background: #F6F6F6;
+  /* radius是卡片的边框的圆润c程度
+    shadow是阴影效果，四个值分别为水平阴影，垂直阴影，模糊距离，阴影的颜色。
+  */
+  position: fixed; 
+  top: 0rpx;
+ }
+
+.cards{
+  margin-top: 210rpx;
+}
+.card{
+  /*卡片的宽度*/  
+  width: 90%;
+  /*左外边距，这里代表距离最左边的距离*/
+  margin-left: 5%;
+  /*卡片的高度。*/
+  height: 245rpx;
+  /*背景色，可以自己更换*/
+  background: #66cc66;
+  /* radius是卡片的边框的圆润c程度
+    shadow是阴影效果，四个值分别为水平阴影，垂直阴影，模糊距离，阴影的颜色。
+  */
+  border-radius: 10rpx;
+  box-shadow: 5px 5px 5px #cdcfcf;
+  margin-bottom: 20rpx;
+ }
+ .card-course_name {
+  width: 100%;
+  line-height: 52px;
+  font-size: 45rpx;
+  color: #FFFFFF;
+  padding: 0rpx 0rpx 0rpx 20rpx;
+}
+ .card-course_score1 {
+  width: 100%;
+  line-height: 52px;
+  font-size: 40rpx;
+  color: #FFFFFF;
+  background-size: cover;
+  padding: 0rpx 10rpx 0rpx 20rpx;
+ }
+  .card-course_score2 {
+  width: 100%;
+  line-height: 52px;
+  font-size: 40rpx;
+  color: #FFFFFF;
+  background-size: cover;
+  padding: 0rpx 10rpx 0rpx 100rpx;
+ }
+ .card-course_attr{ 
+  margin-left: 2%;
+  font-size: 40rpx;
+  color: #FFFFFF;
+  background: #006600;
+  border-radius: 10rpx;
+  box-shadow: 1px 1px 1px #cdcfcf;
+  margin-bottom: 30rpx;
+  padding: 5rpx 10rpx 5rpx 10rpx;
+ }
+
+ .card-course_college {
+  width: 100%;
+  line-height: 12px;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  padding: 0rpx 10rpx 0rpx 20rpx;
+  background-size: cover;
+ }
+  .card-course_teacher {
+  width: 100%;
+  line-height: 12px;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  padding: 0rpx 10rpx 0rpx 100rpx;
+  background-size: cover;
+ }
+ .search-input {
+  position: fixed;
+  top:0rpx;
+  width: 674rpx;
+  margin: 0 39rpx;
+  height: 68rpx;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  color: #006600;
+  padding-left: 50rpx;
+  box-sizing: border-box;
+ }

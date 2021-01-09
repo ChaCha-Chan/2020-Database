@@ -1,0 +1,19 @@
+<!--miniprogram/pages/my_favorite/my_favorite.wxml-->
+
+<button class="btn1" bindtap="onLoad" style="width:100%">我的收藏</button>
+<view class="cards">
+<view wx:for="{{favoriteList}}" wx:key="key">
+<view class="card" catchtap="onDetail" data-bzId="{{item.course_id}}" >
+  <navigator url="../score_page/score_page?id={{ item.course_id}}"  open-type="navigate" hover-class="none">
+    <text class="card-course_attr">{{item.course_type}}</text>
+    <text class="card-course_attr">{{item.course_assess}}</text>
+    <text class="card-course_name">{{item.course_name}}\n</text>
+    <text class="card-course_college">{{item.course_college}}</text>
+    <text class="card-course_teacher">{{item.teacher}}\n</text>
+    <text class="card-course_score1">难易度: {{item.course_avg_easy_score}}</text>
+    <text class="card-course_score2">有趣度: {{item.course_avg_interesting_score}} </text>
+</navigator>
+</view> 
+</view>
+</view>
+
