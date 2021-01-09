@@ -16,3 +16,4 @@
   - 点击“提交反馈”可成功评分
 - 成功提交界面
   - 更新数据库
+- 如果运行显`Error: errCode: -1  | errMsg: document.remove:fail Error: cannot remove document with _id 46, please make sure that the document exists and you have the corresponding Write permission; at document.remove api; `错误的话，设置-项目设置-本地设置-调试基础库”2.10.0“
