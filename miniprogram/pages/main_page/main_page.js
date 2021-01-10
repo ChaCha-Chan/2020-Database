@@ -18,13 +18,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.getUserInfo({
-      success: res => {
-        console.log(res)    //获取的用户信息还有很多，都在res中，看打印结果
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
+    console.log(this.data.userInfo)
+    wx.getSetting({
+      success:(res)=> {
+        if (res.authSetting['scope.userInfo']) {
+          wx.getUserInfo({
+            success:(res)=> {
+              this.setData({
+                userInfo: res.userInfo
+              })
+            }
+          })
+        }
       }
     })
   },
@@ -75,5 +80,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  bindGetUserInfo(e) {
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
+    console.log('test')
+    console.log(e.detail.userInfo)
   }
 })

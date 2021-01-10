@@ -23,7 +23,13 @@ page {
 .userinfo {
   padding-left: 120rpx;
 }
-
+.userinfo-btn{
+  background: #fff;
+  width: 100%;
+  margin-top: 40rpx;
+  font-size: 32rpx;
+  color: #66cc66;
+}
 .userinfo-avatar {
   width: 100rpx;
   height: 100rpx;

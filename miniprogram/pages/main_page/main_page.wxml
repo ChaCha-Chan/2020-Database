@@ -5,7 +5,9 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>  
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-
+<view lass="userinfo">
+  <button class="userinfo-btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"> 授权获取头像昵称 </button>
+</view>
   <!-- 我的收藏 -->
   <view class="uploader">
     <navigator url="../my_favorite/my_favorite" open-type="navigate" class="uploader-text" hover-class="none">
